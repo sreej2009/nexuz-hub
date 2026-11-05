@@ -172,29 +172,120 @@ function WhatWeMake() {
   );
 }
 
+const STEP_ICONS = ['chat', 'edit', 'sparkle', 'shield', 'truck'];
+
+// Keeps hyphenated words like "in-house" from splitting across lines.
+const noBreakHyphens = (text) =>
+  text.split(' ').map((word, i) => (
+    <span key={i}>
+      {i > 0 && ' '}
+      {word.includes('-') ? <span className="whitespace-nowrap">{word}</span> : word}
+    </span>
+  ));
+
 function ProcessStrip() {
+  const last = PROCESS.length - 1;
   return (
-    <section className="border-y border-line bg-paper-2/60 py-24 md:py-28">
-      <div className="mx-auto max-w-[1440px] px-5 md:px-8">
+    <section className="relative overflow-hidden bg-ink py-24 text-paper md:py-32">
+      <div className="grid-paper-dark absolute inset-0" aria-hidden="true" />
+      <div
+        className="pointer-events-none absolute -top-40 left-1/2 size-[640px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgb(212_164_55/0.14)_0%,transparent_65%)]"
+        aria-hidden="true"
+      />
+      <div className="relative mx-auto max-w-[1440px] px-5 md:px-8">
         <div className="flex flex-wrap items-end justify-between gap-6">
-          <SectionHead index="04" eyebrow="How it works" title="Sketch to shipment in five steps." />
-          <Link href="/process" className="btn btn-line" data-reveal>
+          <SectionHead
+            index="04"
+            eyebrow="How it works"
+            title={
+              <>
+                Sketch to shipment <span className="text-gold">in five steps.</span>
+              </>
+            }
+            dark
+          />
+          <Link href="/process" className="btn btn-line-light" data-reveal>
             See the full process <Icon name="arrow" size={16} />
           </Link>
         </div>
-        <ol className="mt-16 grid gap-8 md:grid-cols-5 md:gap-5">
-          {PROCESS.map((p, i) => (
-            <li key={p.title} className="relative" data-reveal style={{ '--d': i }}>
-              <div className="flex items-center gap-3">
-                <span className="font-stencil flex size-14 shrink-0 items-center justify-center rounded-full border border-ink text-2xl">{i + 1}</span>
-                <span className="ruler hidden flex-1 text-ink md:block" />
-              </div>
-              <p className="label mt-5 text-gold-deep">{p.time}</p>
-              <h3 className="display mt-2 text-2xl">{p.title}</h3>
-              <p className="mt-3 text-[0.95rem] leading-relaxed text-ink/60">{p.body}</p>
-            </li>
-          ))}
-        </ol>
+
+        {/* Timeline: one rail joins the steps; the gold fill runs along it when scrolled into view. */}
+        <div className="timeline relative mt-16 md:mt-20" data-reveal>
+          <div className="absolute top-7 bottom-7 left-[27px] w-[2px] bg-paper/15 md:top-[27px] md:right-[calc((100%-64px)/5-28px)] md:bottom-auto md:left-7 md:h-[2px] md:w-auto" aria-hidden="true">
+            <div className="rail-fill absolute inset-0 bg-gradient-to-b from-gold via-gold to-gold-2 shadow-[0_0_12px_rgb(212_164_55/0.6)] md:bg-gradient-to-r" />
+          </div>
+
+          <ol className="relative grid gap-8 md:grid-cols-5 md:gap-4">
+            {PROCESS.map((p, i) => {
+              const final = i === last;
+              return (
+                <li key={p.title} className="grid grid-cols-[3.5rem_1fr] gap-4 md:flex md:flex-col md:gap-0" data-reveal style={{ '--d': i + 1 }}>
+                  <span
+                    className={`font-stencil relative z-10 flex size-14 items-center justify-center rounded-full border text-2xl ${
+                      final ? 'border-gold bg-gold text-ink shadow-[0_0_0_6px_rgb(212_164_55/0.18)]' : 'border-paper/30 bg-ink text-paper'
+                    }`}
+                  >
+                    {i + 1}
+                  </span>
+
+                  <article
+                    className={`group relative overflow-hidden rounded-2xl border p-6 md:flex-1 transition-all duration-500 ease-[var(--ease-out-expo)] hover:-translate-y-1 md:mt-7 ${
+                      final ? 'border-gold/50 bg-gold/[0.08]' : 'border-paper/10 bg-ink-2/80 hover:border-gold/40'
+                    }`}
+                  >
+                    <span
+                      className="font-stencil pointer-events-none absolute -right-2 -bottom-8 text-[8.5rem] leading-none text-transparent opacity-60 [-webkit-text-stroke:1px_rgb(244_240_232/0.08)] transition-opacity duration-500 group-hover:opacity-100"
+                      aria-hidden="true"
+                    >
+                      {i + 1}
+                    </span>
+                    <div className="relative flex items-start justify-between gap-3">
+                      <span className="label inline-flex items-center gap-2 rounded-full border border-gold/40 px-2.5 py-1 text-[0.6rem] text-gold">
+                        <span className="size-1.5 rounded-full bg-gold" />
+                        {p.time}
+                      </span>
+                      <span
+                        className={`flex size-10 shrink-0 items-center justify-center rounded-full transition-colors duration-300 ${
+                          final ? 'bg-gold text-ink' : 'bg-paper/[0.06] text-gold group-hover:bg-gold group-hover:text-ink'
+                        }`}
+                      >
+                        <Icon name={STEP_ICONS[i]} size={18} />
+                      </span>
+                    </div>
+                    <h3 className="display relative mt-6 text-[1.35rem] leading-[1.05] text-balance">{noBreakHyphens(p.title)}</h3>
+                    <p className="relative mt-3 text-[0.93rem] leading-relaxed text-paper/60">{p.body}</p>
+                  </article>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+
+        {/* Summary bar */}
+        <div
+          className="mt-12 flex flex-col gap-6 rounded-2xl border border-paper/10 bg-paper/[0.03] p-6 md:mt-16 md:flex-row md:items-center md:justify-between md:p-7"
+          data-reveal
+        >
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+            <p className="flex items-baseline gap-3">
+              <span className="font-stencil text-5xl leading-none text-gold">48hr</span>
+              <span className="text-paper/70">from approval to dispatch</span>
+            </p>
+            <span className="hidden h-10 w-px bg-paper/15 md:block" />
+            <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-paper/70">
+              {['Proof before we make it', 'GST invoice', 'Courier across India'].map((t) => (
+                <li key={t} className="flex items-center gap-2">
+                  <Icon name="check" size={16} className="text-gold" strokeWidth={2} /> {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <a href={whatsappLink('Hi Nexuz Hub! I have a sketch/idea to share.')} target="_blank" rel="noopener noreferrer" className="btn btn-gold">
+              <WhatsAppIcon size={17} /> Start with a sketch
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

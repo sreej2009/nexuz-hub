@@ -395,3 +395,26 @@ details > summary::-webkit-details-marker {
 details[open] .acc-icon {
   transform: rotate(45deg);
 }
+
+/* Process timeline: the gold rail fills along the steps once the timeline scrolls into view. */
+.timeline .rail-fill {
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 1.8s var(--ease-out-expo) 0.3s;
+}
+@media (width >= 48rem) {
+  .timeline .rail-fill {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+}
+.timeline.is-in .rail-fill,
+html:not(.js) .timeline .rail-fill {
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline .rail-fill {
+    transform: none;
+    transition: none;
+  }
+}
