@@ -1,0 +1,1139 @@
+{
+  "uv-printing": {
+    "slug": "uv-printing",
+    "badge": "Instant UV Liquid Bonding Technology",
+    "heroTitleLine1": "Print Directly.",
+    "heroTitleLine2": "On Almost Anything.",
+    "description": "Experience high-precision UV flatbed printing that bonds liquid ink instantly to acrylic, wood, glass, leather, and composite boards. Micro-calibrated, scratch-proof, and engineered for perfection.",
+    "heroImage": "/images/live/hero_uv_printing.png",
+    "pills": [
+      "Acrylic & Glass",
+      "Wood Grain",
+      "Composite Panels",
+      "Promotional PVC"
+    ],
+    "metrics": [
+      {
+        "value": "0.05mm",
+        "label": "Precision",
+        "highlight": true
+      },
+      {
+        "value": "2.5×1.3m",
+        "label": "Bed Size"
+      },
+      {
+        "value": "Instant",
+        "label": "UV Curing"
+      },
+      {
+        "value": "100%",
+        "label": "Direct Bond",
+        "highlight": true
+      }
+    ],
+    "infoCard1": {
+      "title": "Micron Precision",
+      "desc": "Calibrated accuracy down to 0.05mm across multi-pass runs.",
+      "iconPath": "M12 21a9 9 0 100-18 9 9 0 000 18zM12 8v4l3 3"
+    },
+    "infoCard2": {
+      "title": "Instant Curing",
+      "desc": "UV LED lamps dry liquid ink immediately for instant handling.",
+      "iconPath": "M13 10V3L4 14h7v7l9-11h-7z"
+    },
+    "bentoTitle": "One Technology.",
+    "bentoSub": "Multiple Surfaces.",
+    "bentoItems": [
+      {
+        "title": "Acrylic & Glass",
+        "sub": "Premium Substrate",
+        "image": "/images/live/finished_delivery_products.png",
+        "colSpan": "md:col-span-2 md:row-span-1"
+      },
+      {
+        "title": "Wood Grain",
+        "image": "/images/live/custom_gifts_process.jpg",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Composite Panels",
+        "image": "/images/live/hero_precision_machining.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Promotional",
+        "image": "/images/live/uv_printing_process.jpg",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Bespoke Materials",
+        "desc": "From leather to composite polymers, our adhesion primers handle complex substrates.",
+        "image": "/images/live/hero_laser_cutting.png",
+        "colSpan": "md:col-span-2"
+      },
+      {
+        "title": "Industrial PVC",
+        "image": "/images/live/sign_boards_process.jpg",
+        "colSpan": "md:col-span-1"
+      }
+    ],
+    "benefitsTitleLine1": "Built for Detail.",
+    "benefitsTitleLine2": "Made to Last.",
+    "benefits": [
+      {
+        "title": "Instant UV Curing",
+        "desc": "Inks dry instantly under UV LED lamps, allowing immediate handling and fabrication without smudging.",
+        "icon": "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Vibrant Color",
+        "desc": "Rich layer density with high-opacity white ink for vibrant prints on dark and transparent materials.",
+        "icon": "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01",
+        "color": "#7C4DFF"
+      },
+      {
+        "title": "Durable Finish",
+        "desc": "Scratch, water, chemical, and fade resistant. UV cured inks are engineered for long-term industrial use.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Direct Printing",
+        "desc": "Skip stickers and vinyl labels. We print directly onto finished items for a seamless, executive aesthetic.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "#7C4DFF"
+      }
+    ],
+    "workflowSubtitle": "The Workflow",
+    "workflowSteps": [
+      {
+        "num": "01",
+        "title": "Design Optimization",
+        "desc": "We review vector artwork (AI, CDR, PDF, DXF) to calibrate white ink layers and primer paths for pixel-perfect output.",
+        "color": "ns-gold"
+      },
+      {
+        "num": "02",
+        "title": "Physical Proofing",
+        "desc": "Receive digital mockups or physical sample test prints to verify color accuracy, scale, and surface adhesion quality.",
+        "color": "#7C4DFF"
+      },
+      {
+        "num": "03",
+        "title": "Flatbed Production",
+        "desc": "Our industrial UV flatbed printers execute the run with multi-pass precision, instant LED curing, and quality control.",
+        "color": "ns-gold"
+      }
+    ],
+    "workflowImage": "/images/live/laser_qc_inspection.png",
+    "galleryTitle": "Applications.",
+    "galleryItems": [
+      {
+        "title": "Architectural Retail Displays",
+        "image": "/images/live/why_choose_us_big_hero.png",
+        "isLarge": true
+      },
+      {
+        "title": "Illuminated Signage",
+        "category": "3D Signage",
+        "image": "/images/live/hero_signage_displays.png"
+      },
+      {
+        "title": "Industrial Branding",
+        "category": "Composite Panels",
+        "image": "/images/live/hero_precision_machining.png"
+      },
+      {
+        "title": "Bespoke Gifts",
+        "category": "Custom Gifts",
+        "image": "/images/live/custom_gift_design_software.png"
+      },
+      {
+        "title": "Tech Hardware",
+        "category": "Prototypes & Jigs",
+        "image": "/images/live/3d_printing_process.jpg"
+      }
+    ],
+    "trustTitleLine1": "Why businesses trust",
+    "trustTitleLine2": "Nexuz with their vision.",
+    "trustPoints": [
+      {
+        "title": "Integrated Fabrication",
+        "desc": "Sourcing, laser cutting, and UV printing under one facility in Saravanampatti for total quality accountability.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Extreme Machine Tolerance",
+        "desc": "Weekly printhead laser calibration keeps our alignment tolerance within 0.05mm across multi-layer runs.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "#7C4DFF"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the maximum object size you can print?",
+        "a": "Our industrial UV flatbed printers handle rigid media up to 2.5m x 1.3m (98\" x 51\") with a height clearance of 150mm for 3D objects and thick substrates."
+      },
+      {
+        "q": "How long does UV printing last outdoors?",
+        "a": "Our UV LED-cured inks are weather and fade resistant. Standard outdoor lifespan is 3 to 5 years without fading, extensible with optional clear varnish top-coats."
+      },
+      {
+        "q": "Can you print white ink on dark or transparent objects?",
+        "a": "Yes! We utilize high-opacity white ink channels to lay down a dense base layer on dark, coated, or clear materials, ensuring vibrant full-color accuracy."
+      },
+      {
+        "q": "What artwork formats do you accept?",
+        "a": "We accept vector files including CorelDraw (.CDR), Adobe Illustrator (.AI), PDF, EPS, and high-res raster files (PNG, TIFF) formatted at 300 DPI."
+      }
+    ]
+  },
+  "laser-cutting": {
+    "slug": "laser-cutting",
+    "badge": "CO2 Industrial Laser Optics",
+    "heroTitleLine1": "Cut Directly.",
+    "heroTitleLine2": "With Flame-Polished Edges.",
+    "description": "High-precision CO2 laser cutting for acrylic, wood, MDF, and technical polymers. Zero-distortion beam slicing engineered with 0.1mm tolerance for a flawless part fit.",
+    "heroImage": "/images/live/hero_laser_cutting.png",
+    "pills": [
+      "Cast Acrylic",
+      "Birch Plywood",
+      "MDF Boards",
+      "Technical Polymers"
+    ],
+    "metrics": [
+      {
+        "value": "0.1mm",
+        "label": "Cutting Tolerance",
+        "highlight": true
+      },
+      {
+        "value": "12mm",
+        "label": "Max Acrylic Bed"
+      },
+      {
+        "value": "CO2 Laser",
+        "label": "Optical Power"
+      },
+      {
+        "value": "100%",
+        "label": "Clean Edges",
+        "highlight": true
+      }
+    ],
+    "infoCard1": {
+      "title": "Flame-Polished Finish",
+      "desc": "Acrylic parts leave the bed glass-clear with zero secondary buffing.",
+      "iconPath": "M13 10V3L4 14h7v7l9-11h-7z"
+    },
+    "infoCard2": {
+      "title": "Zero Edge Distortion",
+      "desc": "Non-contact cutting prevents part warping or material stress fractures.",
+      "iconPath": "M12 21a9 9 0 100-18 9 9 0 000 18zM12 8v4l3 3"
+    },
+    "bentoTitle": "Precision Slicing.",
+    "bentoSub": "Zero Burr Edges.",
+    "bentoItems": [
+      {
+        "title": "Cast Acrylic",
+        "sub": "Flame-Polished Cut",
+        "image": "/images/live/laser_cutting_process.jpg",
+        "colSpan": "md:col-span-2 md:row-span-1"
+      },
+      {
+        "title": "Hardwood & Ply",
+        "image": "/images/live/custom_gifts_process.jpg",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Architectural MDF",
+        "image": "/images/live/sign_boards_process.jpg",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Card & Leather",
+        "image": "/images/live/finished_delivery_products.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Complex Geometries",
+        "desc": "Interlocking 3D puzzles, gear arrays, and filigree lattice panels cut seamlessly.",
+        "image": "/images/live/why_choose_us_big_hero.png",
+        "colSpan": "md:col-span-2"
+      },
+      {
+        "title": "Polymer Sheets",
+        "image": "/images/live/hero_precision_machining.png",
+        "colSpan": "md:col-span-1"
+      }
+    ],
+    "benefitsTitleLine1": "Laser Accuracy.",
+    "benefitsTitleLine2": "Flawless Profiles.",
+    "benefits": [
+      {
+        "title": "0.1mm Beam Accuracy",
+        "desc": "Holds razor-thin tolerances suitable for press-fit enclosures and precision mechanical gear teeth.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Zero Tool Wear",
+        "desc": "Because the laser beam never touches the stock, part #1000 is as sharp and exact as part #1.",
+        "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+        "color": "#7C4DFF"
+      },
+      {
+        "title": "Sheet Nesting Optimization",
+        "desc": "Algorithmic nesting reduces material scrap by up to 35% on large corporate production runs.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Flame-Polished Edges",
+        "desc": "Clear acrylic comes off the bed with crystal smooth edges ready for immediate use.",
+        "icon": "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707",
+        "color": "#7C4DFF"
+      }
+    ],
+    "workflowSubtitle": "The Laser Workflow",
+    "workflowSteps": [
+      {
+        "num": "01",
+        "title": "CAD Vector Verification",
+        "desc": "We verify DXF, DWG, AI, and CDR vectors for kerf offset and closed outline integrity.",
+        "color": "ns-gold"
+      },
+      {
+        "num": "02",
+        "title": "Optics Focus & Nesting",
+        "desc": "Materials are calibrated to focal depth and nested for maximum yield across the sheet.",
+        "color": "#7C4DFF"
+      },
+      {
+        "num": "03",
+        "title": "High-Speed Slicing",
+        "desc": "CO2 laser optics execute cuts at high speed with automatic exhaust fume extraction.",
+        "color": "ns-gold"
+      }
+    ],
+    "workflowImage": "/images/live/laser_cutting_process.jpg",
+    "galleryTitle": "Laser Applications.",
+    "galleryItems": [
+      {
+        "title": "Architectural Acrylic Letters",
+        "image": "/images/live/hero_signage_displays.png",
+        "isLarge": true
+      },
+      {
+        "title": "Intricate Wood Models",
+        "category": "Precision Wood",
+        "image": "/images/live/custom_gifts_process.jpg"
+      },
+      {
+        "title": "Enclosures & Jigs",
+        "category": "Technical Polymers",
+        "image": "/images/live/hero_precision_machining.png"
+      },
+      {
+        "title": "Custom Gaskets & Seals",
+        "category": "Industrial Rubber",
+        "image": "/images/live/laser_qc_inspection.png"
+      },
+      {
+        "title": "Stencils & Template Plates",
+        "category": "MDF & Card",
+        "image": "/images/live/3d_printing_process.jpg"
+      }
+    ],
+    "trustTitleLine1": "Why engineers choose",
+    "trustTitleLine2": "Nexuz for laser cutting.",
+    "trustPoints": [
+      {
+        "title": "Calibrated Beam Alignment",
+        "desc": "Our optical mirrors undergo daily alignment checks to prevent kerf taper on thick cast acrylic.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Clean Material Sourcing",
+        "desc": "We use high-grade virgin cast acrylic that doesn’t yellow, chip, or smell during cutting.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "#7C4DFF"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the maximum thickness of acrylic you can laser cut?",
+        "a": "We can cut clear and colored cast acrylic up to 12mm thick with clean, flame-polished edges."
+      },
+      {
+        "q": "What materials can you laser cut and engrave?",
+        "a": "Our CO2 lasers are optimized for non-metallic substrates — cast acrylic, solid wood, MDF, leather, paper, and glass — cutting and etching each with clean, polished edges."
+      },
+      {
+        "q": "What vector file formats do you accept for cutting?",
+        "a": "We accept DXF, DWG, AI, CDR, and PDF files. Please ensure text is converted to outlines/curves."
+      },
+      {
+        "q": "Do laser-cut acrylic edges need polishing after cutting?",
+        "a": "No! Cast acrylic edges cut by our CO2 laser come off the machine bed glass-clear with zero flame-polishing required."
+      }
+    ]
+  },
+  "laser-engraving": {
+    "slug": "laser-engraving",
+    "badge": "Permanent Micro-Etching Optics",
+    "heroTitleLine1": "Etch Permanently.",
+    "heroTitleLine2": "On Wood, Acrylic & Glass.",
+    "description": "High-resolution laser marking and etching that permanently burns intricate logos, serial numbers, and designs onto solid timber, cast acrylic, leather, and glass.",
+    "heroImage": "/images/live/hero_split_machining_part.png",
+    "pills": [
+      "Genuine Leather",
+      "Solid Hardwood",
+      "Cast Acrylic",
+      "Etched Glassware"
+    ],
+    "metrics": [
+      {
+        "value": "1200 DPI",
+        "label": "Resolution",
+        "highlight": true
+      },
+      {
+        "value": "Permanent",
+        "label": "Marking"
+      },
+      {
+        "value": "Sub-mm",
+        "label": "Micro Text"
+      },
+      {
+        "value": "100%",
+        "label": "Wear Proof",
+        "highlight": true
+      }
+    ],
+    "infoCard1": {
+      "title": "Indelible Markings",
+      "desc": "Laser etched graphics will never peel, fade, or rub off over decades.",
+      "iconPath": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    "infoCard2": {
+      "title": "Micro Detail Printing",
+      "desc": "Engrave intricate QR codes, barcodes, and sub-millimeter serial numbers.",
+      "iconPath": "M12 21a9 9 0 100-18 9 9 0 000 18zM12 8v4l3 3"
+    },
+    "bentoTitle": "Permanent Markings.",
+    "bentoSub": "Tactile Finishes.",
+    "bentoItems": [
+      {
+        "title": "Acrylic Nameplates",
+        "sub": "Signage Branding",
+        "image": "/images/live/hero_precision_machining.png",
+        "colSpan": "md:col-span-2 md:row-span-1"
+      },
+      {
+        "title": "Wood Engraving",
+        "image": "/images/live/laser_engraving_process.jpg",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Glassware Etching",
+        "image": "/images/live/finished_delivery_products.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Custom Keepsakes",
+        "image": "/images/live/custom_gifts_process.jpg",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Machine Panels & Tags",
+        "desc": "High-contrast etched control panels and tags with crisp black-on-light or white-on-dark legends.",
+        "image": "/images/live/hero_split_machining_part.png",
+        "colSpan": "md:col-span-2"
+      },
+      {
+        "title": "Leather Branding",
+        "image": "/images/live/custom_gift_design_software.png",
+        "colSpan": "md:col-span-1"
+      }
+    ],
+    "benefitsTitleLine1": "Tactile Depth.",
+    "benefitsTitleLine2": "Zero Wear Fade.",
+    "benefits": [
+      {
+        "title": "Permanent Substrate Bond",
+        "desc": "Engraving physically alters the surface layer so text cannot be removed with solvents or friction.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "1200 DPI Micro Detail",
+        "desc": "Engrave micro-fine vector lines, photographic half-tones, and complex corporate logos.",
+        "icon": "M12 21a9 9 0 100-18 9 9 0 000 18zM12 8v4l3 3",
+        "color": "#7C4DFF"
+      },
+      {
+        "title": "3D Tactile Relief",
+        "desc": "Depth control allows light surface marks or deep 3D relief engraving in timber and acrylic.",
+        "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Serial & Barcode Marking",
+        "desc": "Automated sequential serial number etching for industrial equipment compliance.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "#7C4DFF"
+      }
+    ],
+    "workflowSubtitle": "The Engraving Workflow",
+    "workflowSteps": [
+      {
+        "num": "01",
+        "title": "Grayscale Calibration",
+        "desc": "Design graphics are converted to high-contrast rasters or vector etch paths.",
+        "color": "ns-gold"
+      },
+      {
+        "num": "02",
+        "title": "Focal Depth Setting",
+        "desc": "The laser head is calibrated to match the exact surface curvature of the target part.",
+        "color": "#7C4DFF"
+      },
+      {
+        "num": "03",
+        "title": "Micro Beam Pass",
+        "desc": "High-frequency pulse passes burn or mark the target substrate permanently.",
+        "color": "ns-gold"
+      }
+    ],
+    "workflowImage": "/images/live/laser_engraving_process.jpg",
+    "galleryTitle": "Engraving Showcase.",
+    "galleryItems": [
+      {
+        "title": "Engraved Cast Acrylic Panels",
+        "image": "/images/live/hero_precision_machining.png",
+        "isLarge": true
+      },
+      {
+        "title": "Engraved Wooden Awards",
+        "category": "Solid Timber",
+        "image": "/images/live/laser_engraving_process.jpg"
+      },
+      {
+        "title": "Custom Leather Branding",
+        "category": "Personalized Leather",
+        "image": "/images/live/custom_gift_design_software.png"
+      },
+      {
+        "title": "Acrylic Nameplates",
+        "category": "Engraved Tags",
+        "image": "/images/live/hero_split_machining_part.png"
+      },
+      {
+        "title": "Etched Glassware",
+        "category": "Corporate Gifts",
+        "image": "/images/live/custom_gifts_process.jpg"
+      }
+    ],
+    "trustTitleLine1": "Why clients choose",
+    "trustTitleLine2": "Nexuz for laser engraving.",
+    "trustPoints": [
+      {
+        "title": "Sub-Millimeter Alignment",
+        "desc": "Laser alignment fixtures guarantee logo centering on curved tumblers, pens, and nameplates.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "High-Contrast Output",
+        "desc": "We optimize laser power and speed settings for deep, rich dark contrast without char smudging.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "#7C4DFF"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Will laser engraving rub off over time?",
+        "a": "No! Laser engraving physically removes or vaporizes material, creating a permanent mark that will not scratch, peel, or fade."
+      },
+      {
+        "q": "Can you engrave custom logos and signatures?",
+        "a": "Yes! We can engrave vector logos, custom typography, handwritten signatures, and high-contrast photographs."
+      },
+      {
+        "q": "Can you engrave on cylindrical objects like tumblers or bottles?",
+        "a": "Yes, we use a rotary attachment that rotates cylindrical items during engraving for 360-degree wrapped designs."
+      }
+    ]
+  },
+  "3d-printing": {
+    "slug": "3d-printing",
+    "badge": "Additive Manufacturing & Prototyping",
+    "heroTitleLine1": "Build Layer-by-Layer.",
+    "heroTitleLine2": "From CAD to Prototype.",
+    "description": "Turn digital 3D models into functional physical prototypes, complex jigs, and end-use production components using industrial FDM and SLA resin 3D printers.",
+    "heroImage": "/images/live/hero_3d_printing.png",
+    "pills": [
+      "Tough PLA",
+      "PETG & ABS",
+      "High-Temp Resin",
+      "TPU Flexible"
+    ],
+    "metrics": [
+      {
+        "value": "0.08mm",
+        "label": "Layer Height",
+        "highlight": true
+      },
+      {
+        "value": "FDM + SLA",
+        "label": "Technology"
+      },
+      {
+        "value": "Fast Turn",
+        "label": "24-48 Hours"
+      },
+      {
+        "value": "100%",
+        "label": "Infill Control",
+        "highlight": true
+      }
+    ],
+    "infoCard1": {
+      "title": "Rapid Turnaround",
+      "desc": "Go from 3D CAD file to physical prototype in under 24 hours.",
+      "iconPath": "M13 10V3L4 14h7v7l9-11h-7z"
+    },
+    "infoCard2": {
+      "title": "High Layer Resolution",
+      "desc": "Precision SLA resin prints with glass-smooth surface finishes.",
+      "iconPath": "M12 21a9 9 0 100-18 9 9 0 000 18zM12 8v4l3 3"
+    },
+    "bentoTitle": "Additive Precision.",
+    "bentoSub": "Complex Geometries.",
+    "bentoItems": [
+      {
+        "title": "Functional Engineering Parts",
+        "sub": "High Strength Infill",
+        "image": "/images/live/3d_printing_process.jpg",
+        "colSpan": "md:col-span-2 md:row-span-1"
+      },
+      {
+        "title": "SLA Resin Models",
+        "image": "/images/live/digital_proof_3d.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Custom Fixtures & Jigs",
+        "image": "/images/live/hero_3d_printing.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Architectural Scale Models",
+        "image": "/images/live/why_choose_us_big_hero.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Prototyping & Short Runs",
+        "desc": "Iterate product designs rapidly without expensive injection mold tooling.",
+        "image": "/images/live/custom_gift_design_software.png",
+        "colSpan": "md:col-span-2"
+      },
+      {
+        "title": "Flexible TPU Components",
+        "image": "/images/live/hero_precision_machining.png",
+        "colSpan": "md:col-span-1"
+      }
+    ],
+    "benefitsTitleLine1": "Rapid Iteration.",
+    "benefitsTitleLine2": "Zero Tooling Cost.",
+    "benefits": [
+      {
+        "title": "Zero Tooling Investment",
+        "desc": "Print complex organic geometry directly from STL files without requiring expensive molds or dies.",
+        "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "0.08mm Layer Resolution",
+        "desc": "Ultra-fine SLA resin printing delivers smooth surfaces suitable for investment casting or master molds.",
+        "icon": "M12 21a9 9 0 100-18 9 9 0 000 18zM12 8v4l3 3",
+        "color": "#7C4DFF"
+      },
+      {
+        "title": "Functional Infill Tuning",
+        "desc": "Control internal density from 15% lightweight infill up to 100% solid structural parts.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Multi-Material Library",
+        "desc": "Choose from PLA+, Tough ABS, PETG, Nylon, TPU flexible rubber, and high-temp resins.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "#7C4DFF"
+      }
+    ],
+    "workflowSubtitle": "The 3D Print Workflow",
+    "workflowSteps": [
+      {
+        "num": "01",
+        "title": "STL File Slicing",
+        "desc": "3D CAD files (STL, OBJ, STEP) are sliced into layer G-code paths with optimized support structures.",
+        "color": "ns-gold"
+      },
+      {
+        "num": "02",
+        "title": "Additive Bed Run",
+        "desc": "Industrial FDM/SLA printers deposit material with micro-extrusion precision.",
+        "color": "#7C4DFF"
+      },
+      {
+        "num": "03",
+        "title": "Post-Curing & Cleanup",
+        "desc": "Supports are removed, parts UV cured (SLA), sanded, and inspected against 3D CAD dimensions.",
+        "color": "ns-gold"
+      }
+    ],
+    "workflowImage": "/images/live/3d_printing_process.jpg",
+    "galleryTitle": "3D Print Showcase.",
+    "galleryItems": [
+      {
+        "title": "Functional Prototype Assemblies",
+        "image": "/images/live/hero_3d_printing.png",
+        "isLarge": true
+      },
+      {
+        "title": "Custom Manufacturing Jigs",
+        "category": "Production Tools",
+        "image": "/images/live/3d_printing_process.jpg"
+      },
+      {
+        "title": "Smooth Resin Figures",
+        "category": "High Res SLA",
+        "image": "/images/live/digital_proof_3d.png"
+      },
+      {
+        "title": "Architectural Models",
+        "category": "Scale Display",
+        "image": "/images/live/why_choose_us_big_hero.png"
+      },
+      {
+        "title": "Electronic Enclosures",
+        "category": "Custom ABS/PETG",
+        "image": "/images/live/hero_precision_machining.png"
+      }
+    ],
+    "trustTitleLine1": "Why product teams trust",
+    "trustTitleLine2": "Nexuz for 3D printing.",
+    "trustPoints": [
+      {
+        "title": "Dimensional Accuracy",
+        "desc": "Calibrated stepper motors and enclosed print chambers prevent thermal warping across large prints.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Full Post-Processing",
+        "desc": "We offer support removal, vapor smoothing, surface priming, and UV printing on finished 3D parts.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "#7C4DFF"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What 3D file formats do you accept?",
+        "a": "We accept STL, OBJ, STEP, IGES, and 3MF files."
+      },
+      {
+        "q": "What is the difference between FDM and SLA 3D printing?",
+        "a": "FDM extrudes thermoplastic filaments layer-by-layer (great for strong functional parts), while SLA uses a laser to cure liquid resin (delivering smooth surface details)."
+      },
+      {
+        "q": "How fast can I get a 3D prototype printed?",
+        "a": "Most standard prototype prints are completed and ready for pickup or dispatch within 24 to 48 hours."
+      }
+    ]
+  },
+  "custom-gifts": {
+    "slug": "custom-gifts",
+    "badge": "Bespoke Personalization Studio",
+    "heroTitleLine1": "Crafted Personally.",
+    "heroTitleLine2": "For Every Occasion.",
+    "description": "Create memorable corporate gifts, personalized wooden keepsakes, photo acrylic awards, and custom branded merchandise using combined laser cutting, engraving, and UV printing.",
+    "heroImage": "/images/custom-gifts/hero.png",
+    "pills": [
+      "Custom Awards",
+      "Corporate Keepsakes",
+      "Printed Mugs",
+      "Leather Accessories"
+    ],
+    "metrics": [
+      {
+        "value": "Bespoke",
+        "label": "Customization",
+        "highlight": true
+      },
+      {
+        "value": "Premium",
+        "label": "Packaging"
+      },
+      {
+        "value": "No Minimum",
+        "label": "Order Quantity"
+      },
+      {
+        "value": "100%",
+        "label": "Craft Quality",
+        "highlight": true
+      }
+    ],
+    "infoCard1": {
+      "title": "Executive Finish",
+      "desc": "Hand-assembled personalized keepsakes packaged in luxury gift boxes.",
+      "iconPath": "M12 21a9 9 0 100-18 9 9 0 000 18zM12 8v4l3 3"
+    },
+    "infoCard2": {
+      "title": "Single Piece Custom",
+      "desc": "No minimum order quantities — order 1 custom gift or 1,000 corporate items.",
+      "iconPath": "M13 10V3L4 14h7v7l9-11h-7z"
+    },
+    "bentoTitle": "Unforgettable Gifts.",
+    "bentoSub": "Crafted to Inspire.",
+    "bentoItems": [
+      {
+        "title": "Custom Photo Acrylic Awards",
+        "sub": "Crystal Clear Trophy",
+        "image": "/images/custom-gifts/acrylic_award.png",
+        "colSpan": "md:col-span-2 md:row-span-1"
+      },
+      {
+        "title": "Engraved Wood Keepsakes",
+        "image": "/images/custom-gifts/wooden_keepsake.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Custom Printed Drinkware",
+        "image": "/images/custom-gifts/premium_mug.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Personalized Leather Tags",
+        "image": "/images/custom-gifts/leather_accessories.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Corporate Onboarding Kits",
+        "desc": "Customized gift boxes with laser cut inserts, printed notebooks, and branded accessories.",
+        "image": "/images/custom-gifts/corporate_gift_box.png",
+        "colSpan": "md:col-span-2"
+      },
+      {
+        "title": "Commemorative Plaques",
+        "image": "/images/custom-gifts/premium_packaging.png",
+        "colSpan": "md:col-span-1"
+      }
+    ],
+    "benefitsTitleLine1": "Craftsmanship.",
+    "benefitsTitleLine2": "Memorable Details.",
+    "benefits": [
+      {
+        "title": "Multi-Technology Hybrid",
+        "desc": "Combine laser cutting, precision engraving, and vibrant UV printing on a single custom item.",
+        "icon": "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707",
+        "color": "ns-gold"
+      },
+      {
+        "title": "No Minimum Order Limits",
+        "desc": "Whether you need a single anniversary trophy or 500 corporate employee gifts, we handle both with equal care.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "#7C4DFF"
+      },
+      {
+        "title": "Executive Packaging",
+        "desc": "Optional custom laser-cut foam inserts and velvet-lined luxury gift boxes.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Free Digital Proofs",
+        "desc": "Receive realistic 3D visual proofs to approve layout, font, and placement before production begins.",
+        "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+        "color": "#7C4DFF"
+      }
+    ],
+    "workflowSubtitle": "The Custom Gift Process",
+    "workflowSteps": [
+      {
+        "num": "01",
+        "title": "Concept & Digital Mockup",
+        "desc": "Choose your gift base and send your text, logo, or photo for visual layout proofing.",
+        "color": "ns-gold"
+      },
+      {
+        "num": "02",
+        "title": "Precision Fabrication",
+        "desc": "Our studio laser engraves, cuts, and UV prints your design onto the selected substrate.",
+        "color": "#7C4DFF"
+      },
+      {
+        "num": "03",
+        "title": "Hand Polish & Packaging",
+        "desc": "Items are inspected, hand-cleaned, and packed securely for immediate gifting.",
+        "color": "ns-gold"
+      }
+    ],
+    "workflowImage": "/images/custom-gifts/quality_inspection.png",
+    "galleryTitle": "Gift Gallery.",
+    "galleryItems": [
+      {
+        "title": "Corporate Recognition Trophies",
+        "image": "/images/custom-gifts/executive_awards.png",
+        "isLarge": true
+      },
+      {
+        "title": "Laser Engraved Wooden Boxes",
+        "category": "Timber Keepsakes",
+        "image": "/images/custom-gifts/wooden_keepsake.png"
+      },
+      {
+        "title": "Branded Executive Pens & Tags",
+        "category": "Engraved Branding",
+        "image": "/images/custom-gifts/desk_accessories.png"
+      },
+      {
+        "title": "Printed Acrylic Photo Blocks",
+        "category": "Personal Gifts",
+        "image": "/images/custom-gifts/uv_printing.png"
+      },
+      {
+        "title": "Customized Desk Accessories",
+        "category": "Office Gifts",
+        "image": "/images/custom-gifts/studio.png"
+      }
+    ],
+    "trustTitleLine1": "Why companies choose",
+    "trustTitleLine2": "Nexuz for custom gifts.",
+    "trustImage": "/images/custom-gifts/advanced_manufacturing.png",
+    "trustPoints": [
+      {
+        "title": "In-House Studio Production",
+        "desc": "We fabricate gifts directly in Saravanampatti without middlemen, keeping prices fair and lead times fast.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Uncompromised Quality Control",
+        "desc": "Every item undergoes individual surface inspection before boxing.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "#7C4DFF"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I order just 1 custom item?",
+        "a": "Yes! We specialized in single-piece custom orders as well as large corporate bulk runs."
+      },
+      {
+        "q": "Can you engrave or print our company logo?",
+        "a": "Yes, send your logo in high-res PNG, vector AI, CDR, or PDF format, and we will format it for optimal output."
+      },
+      {
+        "q": "Do you offer gift boxes and packaging?",
+        "a": "Yes, we provide optional luxury gift boxes with custom laser-cut foam inserts."
+      }
+    ]
+  },
+  "sign-boards": {
+    "slug": "sign-boards",
+    "badge": "Architectural Signage Systems",
+    "heroTitleLine1": "Stand Out.",
+    "heroTitleLine2": "With 3D LED Sign Boards.",
+    "description": "High-impact storefront signage, 3D acrylic backlit letters, built-up acrylic logo boards, and architectural retail displays engineered to elevate brand presence.",
+    "heroImage": "/images/live/hero_signage_displays.png",
+    "pills": [
+      "3D LED Letters",
+      "Acrylic Logos",
+      "ACP Backlit Boards",
+      "Wayfinding Signage"
+    ],
+    "metrics": [
+      {
+        "value": "3D Depth",
+        "label": "Illuminated",
+        "highlight": true
+      },
+      {
+        "value": "Weather Proof",
+        "label": "IP65 LED"
+      },
+      {
+        "value": "5+ Years",
+        "label": "Outdoor Life"
+      },
+      {
+        "value": "100%",
+        "label": "Turnkey Fit",
+        "highlight": true
+      }
+    ],
+    "infoCard1": {
+      "title": "IP65 Weatherproof",
+      "desc": "Sealed outdoor LEDs and non-rusting acrylic and composite panels for 5+ years of durability.",
+      "iconPath": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    "infoCard2": {
+      "title": "3D Halo & Front Illumination",
+      "desc": "Uniform LED diffusion creates stunning nighttime storefront visibility.",
+      "iconPath": "M13 10V3L4 14h7v7l9-11h-7z"
+    },
+    "bentoTitle": "Architectural Impact.",
+    "bentoSub": "Brand Dominance.",
+    "bentoItems": [
+      {
+        "title": "3D Acrylic Backlit Storefronts",
+        "sub": "High Impact Signage",
+        "image": "/images/live/hero_signage_displays.png",
+        "colSpan": "md:col-span-2 md:row-span-1"
+      },
+      {
+        "title": "Built-Up Acrylic Logos",
+        "image": "/images/live/hero_precision_machining.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "ACP Panel Boards",
+        "image": "/images/live/sign_boards_process.jpg",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Indoor Office Wayfinding",
+        "image": "/images/live/finished_delivery_products.png",
+        "colSpan": "md:col-span-1"
+      },
+      {
+        "title": "Retail Display Stands",
+        "desc": "Custom illuminated display kiosks engineered for malls and flagship retail stores.",
+        "image": "/images/live/why_choose_us_big_hero.png",
+        "colSpan": "md:col-span-2"
+      },
+      {
+        "title": "Custom Neon & LED Flex",
+        "image": "/images/live/uv_printing_process.jpg",
+        "colSpan": "md:col-span-1"
+      }
+    ],
+    "benefitsTitleLine1": "Vibrant Night & Day.",
+    "benefitsTitleLine2": "Turnkey Installation.",
+    "benefits": [
+      {
+        "title": "Uniform LED Diffusion",
+        "desc": "High-lumen Samsung/Osram LED modules ensure zero hot-spots or dark patches in 3D letters.",
+        "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "All-Weather Construction",
+        "desc": "Marine-grade ACP, weatherproof PVC foam, and UV-stabilized cast acrylic.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "#7C4DFF"
+      },
+      {
+        "title": "Complete On-Site Fit-Out",
+        "desc": "Our field crew handles mounting, structural framing, and electrical power connections.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Energy Efficient (12V DC)",
+        "desc": "Low-power 12V LED drivers reduce operating electricity costs by up to 60%.",
+        "icon": "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707",
+        "color": "#7C4DFF"
+      }
+    ],
+    "workflowSubtitle": "The Signage Workflow",
+    "workflowSteps": [
+      {
+        "num": "01",
+        "title": "Site Measurement & Render",
+        "desc": "We inspect storefront dimensions and provide daytime & nighttime 3D visual renders.",
+        "color": "ns-gold"
+      },
+      {
+        "num": "02",
+        "title": "Laser Cutting & LED Fit",
+        "desc": "3D letters are laser cut, acrylic returns bonded, and waterproof LED modules wired.",
+        "color": "#7C4DFF"
+      },
+      {
+        "num": "03",
+        "title": "On-Site Mounting & Testing",
+        "desc": "Our installation team mounts the board, connects power drivers, and verifies illumination.",
+        "color": "ns-gold"
+      }
+    ],
+    "workflowImage": "/images/live/sign_boards_process.jpg",
+    "galleryTitle": "Signage Showcase.",
+    "galleryItems": [
+      {
+        "title": "Storefront 3D Backlit Signage",
+        "image": "/images/live/hero_signage_displays.png",
+        "isLarge": true
+      },
+      {
+        "title": "Corporate Reception Logos",
+        "category": "Acrylic Logos",
+        "image": "/images/live/hero_precision_machining.png"
+      },
+      {
+        "title": "Retail Mall Displays",
+        "category": "Kiosk Signage",
+        "image": "/images/live/why_choose_us_big_hero.png"
+      },
+      {
+        "title": "Wayfinding & Directory Boards",
+        "category": "Acrylic Signs",
+        "image": "/images/live/finished_delivery_products.png"
+      },
+      {
+        "title": "Pylon Outdoor Signage",
+        "category": "ACP Framing",
+        "image": "/images/live/sign_boards_process.jpg"
+      }
+    ],
+    "trustTitleLine1": "Why retail brands choose",
+    "trustTitleLine2": "Nexuz for sign boards.",
+    "trustPoints": [
+      {
+        "title": "Turnkey Installation",
+        "desc": "From initial site surveying to high-altitude mounting and electrical wiring, we handle everything.",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "color": "ns-gold"
+      },
+      {
+        "title": "Warranty Guarantee",
+        "desc": "All outdoor LED sign boards come with a 2-year warranty on LED modules and power supplies.",
+        "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+        "color": "#7C4DFF"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide site measurement and installation in Coimbatore?",
+        "a": "Yes! Our site survey and installation teams handle measurement, structural mounting, and power hookups across Coimbatore and Tamil Nadu."
+      },
+      {
+        "q": "What types of illumination do you offer for 3D letters?",
+        "a": "We offer front-lit (face illuminated), halo-lit (backlit glow), edge-lit acrylic, and non-illuminated matte acrylic finishes."
+      },
+      {
+        "q": "How long does a 3D LED sign board take to fabricate?",
+        "a": "Standard 3D LED storefront signage takes 5 to 7 working days from design approval to on-site installation."
+      }
+    ]
+  }
+}

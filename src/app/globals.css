@@ -1,0 +1,397 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   Nexuz Hub design tokens
+   Paper + ink workshop palette, logo gold as the accent,
+   laser orange used sparingly for "live" details.
+------------------------------------------------------------------- */
+@theme {
+  --color-paper: #f4f0e8;
+  --color-paper-2: #ebe5d8;
+  --color-paper-3: #ddd4c1;
+  --color-ink: #15130f;
+  --color-ink-2: #1f1c17;
+  --color-ink-3: #2c2820;
+  --color-ink-4: #3b362c;
+  --color-gold: #d4a437;
+  --color-gold-2: #ecc760;
+  --color-gold-deep: #9a7216;
+  --color-laser: #e4572e;
+  --color-muted: #6c6556;
+  --color-line: rgb(21 19 15 / 0.14);
+
+  /* Thulir Media brand fonts (Warownia family). */
+  --font-display: var(--font-heading), 'Arial Black', sans-serif;
+  --font-sans: var(--font-body), 'Arial Narrow', ui-sans-serif, sans-serif;
+  --font-mono: var(--font-label), ui-sans-serif, sans-serif;
+  --font-stencil: var(--font-heading), 'Arial Black', sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-scan: scan 3.2s var(--ease-out-expo) infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes scan {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    background-color: var(--color-paper);
+    /* Fine paper grain: a 3.6 KB pre-rendered tile, inlined so it works under any base path (an SVG noise filter was too slow to paint on phones). */
+    background-image: url('data:image/png;base64,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');
+    background-size: 128px 128px;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    /* Warownia's space glyph is very narrow; widen it like thulirmedia.com does. */
+    word-spacing: 0.2em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  /* Form controls don't inherit word-spacing by default. */
+  input,
+  select,
+  textarea,
+  button {
+    word-spacing: inherit;
+  }
+  ::selection {
+    background: var(--color-gold);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+  }
+  img {
+    user-select: none;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Type
+------------------------------------------------------------------- */
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.92;
+  letter-spacing: -0.005em;
+  word-spacing: 0.14em;
+}
+@utility label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  word-spacing: 0.3em;
+  text-transform: uppercase;
+}
+@utility lede {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: rgb(21 19 15 / 0.72);
+  @media (width >= 48rem) {
+    font-size: 1.1875rem;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Workshop motifs
+------------------------------------------------------------------- */
+
+/* Print crop marks on the four corners. */
+@utility crop {
+  position: relative;
+  --crop-c: rgb(21 19 15 / 0.55);
+  --crop-l: 14px;
+  --crop-o: -9px;
+  &::before {
+    content: '';
+    position: absolute;
+    inset: var(--crop-o);
+    pointer-events: none;
+    background:
+      linear-gradient(var(--crop-c), var(--crop-c)) top left / var(--crop-l) 1px no-repeat,
+      linear-gradient(var(--crop-c), var(--crop-c)) top left / 1px var(--crop-l) no-repeat,
+      linear-gradient(var(--crop-c), var(--crop-c)) top right / var(--crop-l) 1px no-repeat,
+      linear-gradient(var(--crop-c), var(--crop-c)) top right / 1px var(--crop-l) no-repeat,
+      linear-gradient(var(--crop-c), var(--crop-c)) bottom left / var(--crop-l) 1px no-repeat,
+      linear-gradient(var(--crop-c), var(--crop-c)) bottom left / 1px var(--crop-l) no-repeat,
+      linear-gradient(var(--crop-c), var(--crop-c)) bottom right / var(--crop-l) 1px no-repeat,
+      linear-gradient(var(--crop-c), var(--crop-c)) bottom right / 1px var(--crop-l) no-repeat;
+  }
+}
+@utility crop-light {
+  --crop-c: rgb(244 240 232 / 0.5);
+}
+
+/* Measuring tape: short ticks every 8px, tall ones every 40px. */
+@utility ruler {
+  height: 14px;
+  background:
+    repeating-linear-gradient(90deg, currentColor 0 1px, transparent 1px 40px) bottom / 100% 14px no-repeat,
+    repeating-linear-gradient(90deg, currentColor 0 1px, transparent 1px 8px) bottom / 100% 6px no-repeat;
+  opacity: 0.35;
+}
+
+/* Engineering grid paper. */
+@utility grid-paper {
+  background-image:
+    linear-gradient(rgb(21 19 15 / 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(21 19 15 / 0.055) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+@utility grid-paper-dark {
+  background-image:
+    linear-gradient(rgb(244 240 232 / 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(244 240 232 / 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Hatched placeholder / divider. */
+@utility hatch {
+  background-image: repeating-linear-gradient(-45deg, rgb(21 19 15 / 0.12) 0 1px, transparent 1px 7px);
+}
+
+/* Spec chip: monospaced tag with a tiny registration dot. */
+@utility chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem 0.3rem 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  word-spacing: 0.3em;
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+  &::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--color-gold);
+  }
+}
+
+/* Outlined giant type (footer signature). */
+@utility outline-type {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(244 240 232 / 0.22);
+}
+
+/* ------------------------------------------------------------------
+   Buttons
+------------------------------------------------------------------- */
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  height: 3.25rem;
+  padding-inline: 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  word-spacing: 0.3em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition:
+    background-color 0.25s,
+    color 0.25s,
+    border-color 0.25s,
+    transform 0.25s var(--ease-out-expo);
+  &:active {
+    transform: scale(0.97);
+  }
+  & svg {
+    transition: transform 0.35s var(--ease-out-expo);
+  }
+  &:hover svg {
+    transform: translateX(3px);
+  }
+  &:disabled {
+    opacity: 0.55;
+    pointer-events: none;
+  }
+}
+@utility btn-gold {
+  background: var(--color-gold);
+  color: var(--color-ink);
+  &:hover {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+}
+@utility btn-ink {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  &:hover {
+    background: var(--color-gold);
+    color: var(--color-ink);
+  }
+}
+@utility btn-line {
+  border-color: rgb(21 19 15 / 0.25);
+  color: var(--color-ink);
+  &:hover {
+    border-color: var(--color-ink);
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+}
+@utility btn-line-light {
+  border-color: rgb(244 240 232 / 0.28);
+  color: var(--color-paper);
+  &:hover {
+    border-color: var(--color-gold);
+    background: var(--color-gold);
+    color: var(--color-ink);
+  }
+}
+@utility btn-sm {
+  height: 2.5rem;
+  padding-inline: 1.1rem;
+  font-size: 0.68rem;
+}
+
+/* Animated underline for text links. */
+@utility link-line {
+  background: linear-gradient(currentColor, currentColor) left bottom / 0 1px no-repeat;
+  transition: background-size 0.4s var(--ease-out-expo);
+  &:hover {
+    background-size: 100% 1px;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Form fields
+------------------------------------------------------------------- */
+@utility field {
+  width: 100%;
+  border: 1px solid rgb(21 19 15 / 0.2);
+  border-radius: 0.75rem;
+  background: rgb(255 255 255 / 0.55);
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  color: var(--color-ink);
+  transition:
+    border-color 0.2s,
+    background-color 0.2s,
+    box-shadow 0.2s;
+  &::placeholder {
+    color: rgb(21 19 15 / 0.4);
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--color-ink);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgb(212 164 55 / 0.25);
+  }
+}
+@utility field-dark {
+  border-color: rgb(244 240 232 / 0.18);
+  background: rgb(244 240 232 / 0.04);
+  color: var(--color-paper);
+  &::placeholder {
+    color: rgb(244 240 232 / 0.38);
+  }
+  &:focus {
+    border-color: var(--color-gold);
+    background: rgb(244 240 232 / 0.07);
+  }
+}
+
+/* ------------------------------------------------------------------
+   Scroll reveal (only when JS is running, so content never stays hidden)
+------------------------------------------------------------------- */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.8s var(--ease-out-expo),
+    transform 0.9s var(--ease-out-expo);
+  transition-delay: calc(var(--d, 0) * 80ms);
+}
+.js [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-marquee,
+  .animate-scan {
+    animation: none !important;
+  }
+}
+
+/* Hero headline line-by-line rise (CSS only). Text is visible from the first frame,
+   so it never delays the page's main paint. */
+.rise > span {
+  display: block;
+}
+.rise > span > span {
+  display: block;
+  animation: rise 0.9s var(--ease-out-expo) both;
+  animation-delay: calc(var(--i, 0) * 90ms);
+}
+@keyframes rise {
+  from {
+    transform: translateY(0.28em);
+    opacity: 0.35;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rise > span > span {
+    animation: none;
+  }
+}
+
+/* Native <details> accordion polish. */
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .acc-icon {
+  transform: rotate(45deg);
+}

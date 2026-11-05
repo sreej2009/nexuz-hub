@@ -1,0 +1,392 @@
+{
+  "home-decor": {
+    "numberLabel": "01",
+    "categoryTag": "INTERIOR ELEMENTS",
+    "bigTitle": "HOME DECOR",
+    "heroTagline": "Custom printed tiles, wooden wall art, canvas prints, leatherette goods, printed cabinet doors and glass partition panels — created in-house under one roof.",
+    "heroImage": "/images/products/home-decor.png",
+    "storyHeadline": "Artisanal Interior Elements",
+    "storyP1": "In the dialogue between a living space and its inhabitants, interior decor serves as the main atmosphere. Our approach treats every wall tile, wood panel, decorative clock, and printed glass partition as a permanent installation — elevating personal photography and artwork to a refined aesthetic statement.",
+    "storyP2": "By combining high-definition UV printing with direct-to-surface tactile texturing, we create decor pieces — from photo wood blocks and decorative clocks to leatherette wallets, diaries and passport holders — that don’t just fill space; they define the warmth and character of the home.",
+    "specs": [
+      {
+        "label": "MOUNTING",
+        "text": "Concealed flush hanging, tile adhesive, or glass standoff bracketry."
+      },
+      {
+        "label": "ENVIRONMENT",
+        "text": "Optimized for living spaces, backsplashes, and glass partitions."
+      },
+      {
+        "label": "DURABILITY",
+        "text": "UV-cured scratch-resistant ceramic inks & sealed hardwood."
+      }
+    ],
+    "bannerImage": "/images/live/laser_engraving_process.jpg",
+    "bannerItems": [
+      {
+        "title": "PRECISION PRINTING",
+        "desc": "1440 DPI Direct Flatbed",
+        "icon": "M13 10V3L4 14h7v7l9-11h-7z"
+      },
+      {
+        "title": "PREMIUM MATERIALS",
+        "desc": "Ceramic, Glass & Hardwood",
+        "icon": "M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+      },
+      {
+        "title": "HAND FINISHED",
+        "desc": "In-House Edge Buffing & Seal",
+        "icon": "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+      }
+    ],
+    "gridItems": [
+      {
+        "num": "01",
+        "title": "Materials",
+        "desc": "Ceramic, Porcelain, Walnut, Oak, Leatherette, Clear & Frosted Glass."
+      },
+      {
+        "num": "02",
+        "title": "Sizes",
+        "desc": "Custom 6x6\" tiles, wardrobe & kitchen cabinet doors, up to 8x4ft glass partitions."
+      },
+      {
+        "num": "03",
+        "title": "Colors",
+        "desc": "High-gamut full-color printing with rich gold and bronze tones."
+      },
+      {
+        "num": "04",
+        "title": "Finishes",
+        "desc": "Matte ceramic, glossy glass, oiled wood grain, leatherette."
+      },
+      {
+        "num": "05",
+        "title": "Printing",
+        "desc": "Direct-to-surface UV flatbed with raised 3D texture."
+      },
+      {
+        "num": "06",
+        "title": "Products",
+        "desc": "Tiles, wood panels & clocks, canvas, leather wallets, diaries & passport holders."
+      }
+    ],
+    "sectors": [
+      {
+        "title": "Living Rooms",
+        "desc": "Large format canvas prints & custom hardwood wall art."
+      },
+      {
+        "title": "Kitchen & Bath",
+        "desc": "Custom printed ceramic tiles & moisture-proof backsplashes."
+      },
+      {
+        "title": "Office Suites",
+        "desc": "Branded glass partitions & decorative wall panels."
+      },
+      {
+        "title": "Boutique Hotels",
+        "desc": "Atmospheric room artwork & bespoke decorative accents."
+      },
+      {
+        "title": "Retail Spaces",
+        "desc": "High-impact display panels & decorative feature walls."
+      },
+      {
+        "title": "Private Villas",
+        "desc": "Custom heirloom artwork & personalized interior elements."
+      }
+    ],
+    "techSpecs": [
+      {
+        "key": "MATERIAL",
+        "value": "Ceramic, Hardwood, Tempered Glass, Leatherette"
+      },
+      {
+        "key": "THICKNESS",
+        "value": "4mm to 18mm Solid Profile"
+      },
+      {
+        "key": "FINISH",
+        "value": "Satin UV, High Gloss Varnish, Natural Tung Oil"
+      },
+      {
+        "key": "PRINTING",
+        "value": "Direct UV Flatbed (1440 DPI Resolution)"
+      },
+      {
+        "key": "ENGRAVING",
+        "value": "Laser Etched Hardwood & Glass Surface"
+      },
+      {
+        "key": "WARRANTY",
+        "value": "10-Year Fade Resistant & Structural Quality"
+      },
+      {
+        "key": "ENVIRONMENT",
+        "value": "Indoor & Humidity Resistant"
+      }
+    ]
+  },
+  "personalized-gifts": {
+    "numberLabel": "02",
+    "categoryTag": "BESPOKE GIFTS",
+    "bigTitle": "PERSONALIZED GIFTS",
+    "heroTagline": "Everyday objects turned into lasting keepsakes with 3D tactile UV printing and precision laser engraving.",
+    "heroImage": "/images/products/personalized-gifts.png",
+    "storyHeadline": "The Art of Gifting",
+    "storyP1": "A true gift carries the weight of the moments it celebrates. Our custom gifts collection transforms everyday objects — mobile covers, laptop skins, acrylic photo frames, keychains, and drinkware — into tactile keepsakes with full-colour depth and 3D texture.",
+    "storyP2": "From back-printed acrylic photo blocks and Spotify music plaques to branded pen drives and leatherette coasters, every item is printed and engraved in-house at Saravanampatti, Coimbatore — ensuring swift 24-48 hour turnaround with zero compromise on artisanal detail.",
+    "specs": [
+      {
+        "label": "PACKAGING",
+        "text": "Premium gift boxing with protective velvet wrapping."
+      },
+      {
+        "label": "TACTILE",
+        "text": "3D raised UV texture felt with fingertips."
+      },
+      {
+        "label": "DURABILITY",
+        "text": "Scratch-proof coatings for daily handheld use."
+      }
+    ],
+    "bannerImage": "/images/live/custom_gifts_process.jpg",
+    "bannerItems": [
+      {
+        "title": "TACTILE UV PRINTING",
+        "desc": "3D Ink Relief Texture",
+        "icon": "M13 10V3L4 14h7v7l9-11h-7z"
+      },
+      {
+        "title": "OPTICAL ACRYLIC",
+        "desc": "Crystal Clear Edge Polish",
+        "icon": "M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+      },
+      {
+        "title": "EXPRESS DISPATCH",
+        "desc": "24-48 Hour Turnaround",
+        "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+      }
+    ],
+    "gridItems": [
+      {
+        "num": "01",
+        "title": "Materials",
+        "desc": "Optical Acrylic, Hardwood, Leather, Polycarbonate, MDF."
+      },
+      {
+        "num": "02",
+        "title": "Sizes",
+        "desc": "Phone cases, laptop skins, photo frames, keychains, coasters, 1L rotary drinkware."
+      },
+      {
+        "num": "03",
+        "title": "Colors",
+        "desc": "Vibrant high-definition colors with clear gloss overlays."
+      },
+      {
+        "num": "04",
+        "title": "Finishes",
+        "desc": "Tactile 3D relief, mirrored acrylic, laser etched timber."
+      },
+      {
+        "num": "05",
+        "title": "Branding",
+        "desc": "Personal monograms, inscriptions, corporate logo embossing."
+      },
+      {
+        "num": "06",
+        "title": "Packaging",
+        "desc": "Velvet lined gift boxes and custom presentation sleeves."
+      }
+    ],
+    "sectors": [
+      {
+        "title": "Corporate Gifting",
+        "desc": "Executive desk plaques, custom pen drives, and client sets."
+      },
+      {
+        "title": "Weddings",
+        "desc": "Personalized acrylic wedding keepsakes, vows & favors."
+      },
+      {
+        "title": "Personal Tributes",
+        "desc": "Anniversary photo blocks, mobile covers, and keychains."
+      },
+      {
+        "title": "Milestone Events",
+        "desc": "Custom trophies, engraved awards & celebration tokens."
+      },
+      {
+        "title": "Retail Keepsakes",
+        "desc": "Branded merchandise and custom accessories."
+      },
+      {
+        "title": "Festive Season",
+        "desc": "Curated corporate and family gift boxes with custom branding."
+      }
+    ],
+    "techSpecs": [
+      {
+        "key": "MATERIAL",
+        "value": "Optical Acrylic, Hardwood, Polycarbonate, MDF"
+      },
+      {
+        "key": "PRINTING",
+        "value": "3D Raised UV Ink & High Gloss Varnish"
+      },
+      {
+        "key": "ENGRAVING",
+        "value": "Laser Etch on Acrylic & Wood"
+      },
+      {
+        "key": "FINISH",
+        "value": "Scratch-Resistant UV Coating"
+      },
+      {
+        "key": "PACKAGING",
+        "value": "Custom Fitted Gift Box"
+      },
+      {
+        "key": "TURNAROUND",
+        "value": "24-48 Hours Express Dispatch"
+      },
+      {
+        "key": "ENVIRONMENT",
+        "value": "Daily Use & Moisture Resistant"
+      }
+    ]
+  },
+  "signage-branding": {
+    "numberLabel": "03",
+    "categoryTag": "ARCHITECTURAL ARTIFACTS",
+    "bigTitle": "SIGNAGE",
+    "heroTagline": "Crafted to leave a lasting impression. Every piece is an intersection of heritage material and modern precision.",
+    "heroImage": "/images/products/signage-branding.png",
+    "storyHeadline": "The Architectural Mark",
+    "storyP1": "In the dialogue between a structure and its visitors, signage serves as the primary voice. Our approach treats every marker — from acrylic logo boards and reception signs to acrylic nameplates, desk ID badges, and PVC foam sunboards — as a permanent installation, elevating functional orientation to an aesthetic statement.",
+    "storyP2": "By blending time-honoured craftsmanship with contemporary laser-precision — including accessibility-compliant Braille and tactile signage — we create artifacts that don’t just point the way; they define the atmosphere of the space they inhabit.",
+    "specs": [
+      {
+        "label": "MOUNTING",
+        "text": "Concealed standoff, flush adhesive, or bespoke bracketry."
+      },
+      {
+        "label": "ENVIRONMENT",
+        "text": "Optimized for both high-traffic interiors and extreme exterior conditions."
+      },
+      {
+        "label": "DURABILITY",
+        "text": "Architectural grade acrylics and composites with UV-cured, weatherproof longevity."
+      }
+    ],
+    "bannerImage": "/images/live/sign_boards_process.jpg",
+    "bannerItems": [
+      {
+        "title": "PRECISION CUTTING",
+        "desc": "Sub-millimeter accuracy",
+        "icon": "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+      },
+      {
+        "title": "PREMIUM MATERIALS",
+        "desc": "Cast Acrylic & Hardwood",
+        "icon": "M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+      },
+      {
+        "title": "HAND FINISHED",
+        "desc": "Individual Artisan Polish",
+        "icon": "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+      }
+    ],
+    "gridItems": [
+      {
+        "num": "01",
+        "title": "Materials",
+        "desc": "Cast Acrylic, Hardwood, PVC Foam, Polycarbonate, Marble, Vinyl."
+      },
+      {
+        "num": "02",
+        "title": "Sizes",
+        "desc": "From desk ID badges & reception signs to monolith exterior structures."
+      },
+      {
+        "num": "03",
+        "title": "Colors",
+        "desc": "Custom RAL matching or natural wood-grain tones."
+      },
+      {
+        "num": "04",
+        "title": "Finishes",
+        "desc": "Matte, High-Gloss, Frosted, Wood-Grain."
+      },
+      {
+        "num": "05",
+        "title": "Branding",
+        "desc": "3D Raised letters, Engraving, Braille Inclusivity."
+      },
+      {
+        "num": "06",
+        "title": "Formats",
+        "desc": "Acrylic logo boards, acrylic nameplates, PVC foam sunboards & vinyl."
+      }
+    ],
+    "sectors": [
+      {
+        "title": "Corporate Offices",
+        "desc": "Wayfinding and identity for global headquarters."
+      },
+      {
+        "title": "Hotels",
+        "desc": "Atmospheric room numbering and lobby markers."
+      },
+      {
+        "title": "Retail Stores",
+        "desc": "High-impact branding for luxury retail facades."
+      },
+      {
+        "title": "Restaurants",
+        "desc": "Intimate signage that complements interior design."
+      },
+      {
+        "title": "Hospitals",
+        "desc": "Clarity-driven Braille & wayfinding for complex facilities."
+      },
+      {
+        "title": "Events",
+        "desc": "Temporary yet high-end signage for elite gatherings."
+      }
+    ],
+    "techSpecs": [
+      {
+        "key": "MATERIAL",
+        "value": "Cast Acrylic, Solid Hardwood, Polycarbonate, PVC Foam"
+      },
+      {
+        "key": "THICKNESS",
+        "value": "1.5mm to 25mm Custom Milling"
+      },
+      {
+        "key": "FINISH",
+        "value": "Satin, High-Gloss, Frosted, Wood-Grain"
+      },
+      {
+        "key": "PRINTING",
+        "value": "UV Flatbed, Ceramic Ink Infill, Braille Dots"
+      },
+      {
+        "key": "ENGRAVING",
+        "value": "Deep CNC or CO2 Laser Etch"
+      },
+      {
+        "key": "WARRANTY",
+        "value": "Lifetime Structural, 10-Year Finish"
+      },
+      {
+        "key": "ENVIRONMENT",
+        "value": "Weatherproof, Salt-Air & Outdoor Rated"
+      }
+    ]
+  }
+}
