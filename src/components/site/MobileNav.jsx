@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import Icon, { WhatsAppIcon } from '@/components/ui/Icon';
 import { SERVICES } from '@/data/services';
 import { SITE, whatsappLink } from '@/data/site';
@@ -20,7 +21,10 @@ const LINKS = [
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => setMounted(true), []);
 
   // Close on navigation and lock page scroll while open.
   useEffect(() => setOpen(false), [pathname]);
@@ -46,8 +50,12 @@ export default function MobileNav() {
         <Icon name="menu" size={20} />
       </button>
 
+      {/* Rendered on <body>: the header's backdrop blur would otherwise trap this
+          full-screen panel inside the header bar. */}
+      {mounted &&
+        createPortal(
       <div
-        className={`fixed inset-0 z-[60] flex flex-col bg-ink text-paper transition-[opacity,visibility] duration-300 lg:hidden ${open ? 'visible opacity-100' : 'invisible opacity-0'}`}
+        className={`fixed inset-0 z-[60] flex h-dvh flex-col bg-ink text-paper transition-[opacity,visibility] duration-300 lg:hidden ${open ? 'visible opacity-100' : 'invisible opacity-0'}`}
         role="dialog"
         aria-modal="true"
         aria-label="Menu"
@@ -98,7 +106,9 @@ export default function MobileNav() {
             <Icon name="phone" size={16} /> Call
           </a>
         </div>
-      </div>
+      </div>,
+          document.body,
+        )}
     </>
   );
 }
