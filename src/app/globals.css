@@ -418,3 +418,28 @@ html:not(.js) .timeline .rail-fill {
     transition: none;
   }
 }
+
+/* Services showcase: caption block fades up each time the active service changes. */
+.showcase-in > * {
+  animation: showcase-in 0.6s var(--ease-out-expo) both;
+}
+.showcase-in > *:nth-child(2) {
+  animation-delay: 40ms;
+}
+.showcase-in > *:nth-child(3) {
+  animation-delay: 80ms;
+}
+.showcase-in > *:nth-child(4) {
+  animation-delay: 120ms;
+}
+@keyframes showcase-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .showcase-in > * {
+    animation: none;
+  }
+}

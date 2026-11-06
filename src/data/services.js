@@ -54,3 +54,16 @@ export const SERVICES = SUMMARY.map((s, i) => ({
 }));
 
 export const getService = (slug) => SERVICES.find((s) => s.slug === slug);
+
+// Small version of each service for the interactive showcase (keeps the page payload light).
+export const SERVICE_CARDS = SERVICES.map(({ slug, index, name, short, tag, blurb, image, badge, metrics }) => ({
+  slug,
+  index,
+  name,
+  short,
+  tag,
+  blurb,
+  image,
+  badge,
+  metrics,
+}));

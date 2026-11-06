@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import CtaBand from '@/components/site/CtaBand';
-import { MaterialsMarquee, PageHero, SectionHead, ServiceIndex } from '@/components/site/blocks';
+import ServiceShowcase from '@/components/site/ServiceShowcase';
+import { MaterialsMarquee, PageHero, SectionHead } from '@/components/site/blocks';
 import Icon from '@/components/ui/Icon';
-import { SERVICES } from '@/data/services';
+import { SERVICE_CARDS, SERVICES } from '@/data/services';
 
 export const metadata = {
   title: 'Services',
@@ -29,7 +30,7 @@ export default function ServicesPage() {
         ]}
       />
       <section className="mx-auto max-w-[1440px] px-5 py-20 md:px-8 md:py-28">
-        <ServiceIndex services={SERVICES} />
+        <ServiceShowcase services={SERVICE_CARDS} />
       </section>
       <MaterialsMarquee dark />
       <section className="mx-auto max-w-[1440px] px-5 py-24 md:px-8 md:py-32">

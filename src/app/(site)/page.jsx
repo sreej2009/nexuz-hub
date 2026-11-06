@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import CtaBand from '@/components/site/CtaBand';
-import { MaterialsMarquee, ProductCard, RiseLines, SectionHead, ServiceIndex, TestimonialWall } from '@/components/site/blocks';
+import ServiceShowcase from '@/components/site/ServiceShowcase';
+import { MaterialsMarquee, ProductCard, RiseLines, SectionHead, TestimonialWall } from '@/components/site/blocks';
 import Icon, { WhatsAppIcon } from '@/components/ui/Icon';
 import { MAKES, PROCESS, PROMISES } from '@/data/process';
 import { RANGES } from '@/data/ranges';
-import { SERVICES } from '@/data/services';
+import { SERVICE_CARDS, SERVICES } from '@/data/services';
 import { STATS, whatsappLink } from '@/data/site';
 import { TESTIMONIALS } from '@/data/testimonials';
 import { listProducts } from '@/lib/store';
@@ -356,7 +357,7 @@ export default async function HomePage() {
           </Link>
         </div>
         <div className="mt-14">
-          <ServiceIndex services={SERVICES} />
+          <ServiceShowcase services={SERVICE_CARDS} />
         </div>
       </section>
       <WhyNexuz />
