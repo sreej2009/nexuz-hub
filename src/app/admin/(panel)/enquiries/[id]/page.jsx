@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { deleteEnquiryAction, saveEnquiryNotes, setEnquiryStatus } from '@/app/admin/actions';
 import ConfirmButton from '@/components/admin/ConfirmButton';
-import { PageTitle, StatusBadge, TYPE_LABEL, formatDate } from '@/components/admin/ui';
+import { Notice, PageTitle, SpamBadge, StatusBadge, TYPE_LABEL, formatDate } from '@/components/admin/ui';
 import Icon, { WhatsAppIcon } from '@/components/ui/Icon';
 import { requireAdmin } from '@/lib/auth';
 import { ENQUIRY_STATUSES, getEnquiry } from '@/lib/store';
@@ -34,8 +34,15 @@ export default async function EnquiryPage({ params }) {
       <div className="mt-4">
         <PageTitle eyebrow={TYPE_LABEL[e.type]} title={e.name}>
           <StatusBadge status={e.status} />
+          {e.spam && <SpamBadge />}
         </PageTitle>
       </div>
+      {e.spam && (
+        <Notice tone="warn">
+          This enquiry filled a hidden anti-spam field. It may be a bot — or a real customer whose browser autofill filled it by mistake. Check the details
+          before replying.
+        </Notice>
+      )}
 
       <div className="grid gap-6 xl:grid-cols-[1.4fr_1fr]">
         <div className="space-y-6">

@@ -15,8 +15,10 @@ const text = (fd, key, max) => String(fd.get(key) ?? '').trim().slice(0, max);
  * for useActionState.
  */
 export async function submitEnquiry(_prev, formData) {
-  // Honeypot: real people never fill the hidden "website" field.
-  if (text(formData, 'website', 200)) return { ok: true };
+  // Hidden trap field: people never see it, simple bots fill it. Autofill tools can
+  // fill it by mistake too, so we never drop the enquiry - we save it flagged
+  // "possible spam" and let the admin decide.
+  const spam = Boolean(text(formData, 'nx_hp_ref', 200));
 
   const type = TYPES.includes(formData.get('type')) ? formData.get('type') : 'quote';
   const data = {
@@ -29,6 +31,7 @@ export async function submitEnquiry(_prev, formData) {
     quantity: text(formData, 'quantity', 40),
     message: text(formData, 'message', 3000),
     page: text(formData, 'page', 200),
+    ...(spam && { spam: true }),
   };
 
   const errors = {};

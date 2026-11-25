@@ -19,6 +19,14 @@ export function StatusBadge({ status }) {
   return <span className={`label inline-block rounded-full px-2.5 py-1 text-[0.6rem] ${STATUS_STYLE[status] ?? STATUS_STYLE.closed}`}>{status}</span>;
 }
 
+export function SpamBadge() {
+  return (
+    <span className="label ml-1.5 inline-block rounded-full border border-laser/40 bg-laser/10 px-2.5 py-1 text-[0.6rem] text-laser" title="A hidden anti-spam field was filled. Could be a bot, or a browser autofill tool.">
+      Possible spam
+    </span>
+  );
+}
+
 export function PageTitle({ eyebrow, title, children }) {
   return (
     <div className="mb-8 flex flex-wrap items-end justify-between gap-4">

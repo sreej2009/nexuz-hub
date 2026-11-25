@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Notice, PageTitle, StatusBadge, TYPE_LABEL, formatDate, timeAgo } from '@/components/admin/ui';
+import { Notice, PageTitle, SpamBadge, StatusBadge, TYPE_LABEL, formatDate, timeAgo } from '@/components/admin/ui';
 import Icon from '@/components/ui/Icon';
 import { requireAdmin } from '@/lib/auth';
 import { ENQUIRY_STATUSES, listEnquiries } from '@/lib/store';
@@ -96,6 +96,7 @@ export default async function EnquiriesPage({ searchParams }) {
                   </td>
                   <td className="md:px-5 md:py-4">
                     <StatusBadge status={e.status} />
+                    {e.spam && <SpamBadge />}
                   </td>
                 </tr>
               ))}

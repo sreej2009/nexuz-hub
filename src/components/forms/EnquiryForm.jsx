@@ -105,7 +105,17 @@ export default function EnquiryForm({ type = 'quote', service = '', product = ''
       {product && <input type="hidden" name="product" value={product} />}
       {/* Honeypot for bots — hidden from people and screen readers. */}
       <div className="absolute -left-[9999px] h-0 w-0 overflow-hidden" aria-hidden="true">
-        <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+        {/* Neutral name + ignore hints so password managers and autofill (Dashlane, 1Password, LastPass, Chrome) leave it empty. */}
+        <input
+          type="text"
+          name="nx_hp_ref"
+          tabIndex={-1}
+          autoComplete="off"
+          data-form-type="other"
+          data-1p-ignore="true"
+          data-lpignore="true"
+          data-bwignore="true"
+        />
       </div>
 
       <div className={inline ? 'grid gap-3 sm:grid-cols-[1fr_1fr_auto] sm:items-end' : 'grid gap-5 sm:grid-cols-2'}>

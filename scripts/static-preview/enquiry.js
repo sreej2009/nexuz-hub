@@ -7,7 +7,6 @@ const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const text = (fd, key, max) => String(fd.get(key) ?? '').trim().slice(0, max);
 
 export async function submitEnquiry(_prev, formData) {
-  if (text(formData, 'website', 200)) return { ok: true };
   const type = text(formData, 'type', 20) || 'quote';
   const data = {
     name: text(formData, 'name', 80),

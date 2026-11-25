@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { PageTitle, StatusBadge, TYPE_LABEL, timeAgo } from '@/components/admin/ui';
+import { PageTitle, SpamBadge, StatusBadge, TYPE_LABEL, timeAgo } from '@/components/admin/ui';
 import Icon from '@/components/ui/Icon';
 import { requireAdmin } from '@/lib/auth';
 import { getStats, listEnquiries, storageInfo } from '@/lib/store';
@@ -64,6 +64,7 @@ export default async function Dashboard() {
               <li key={e.id}>
                 <Link href={`/admin/enquiries/${e.id}`} className="flex flex-wrap items-center gap-x-4 gap-y-1 px-5 py-4 hover:bg-paper-2/60">
                   <StatusBadge status={e.status} />
+                  {e.spam && <SpamBadge />}
                   <span className="font-semibold">{e.name}</span>
                   <span className="text-sm text-ink/55">{e.product || e.service || TYPE_LABEL[e.type]}</span>
                   <span className="ml-auto text-sm text-ink/45">{timeAgo(e.createdAt)}</span>

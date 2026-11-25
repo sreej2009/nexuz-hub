@@ -5,6 +5,7 @@ import { ENQUIRY_STATUSES, listEnquiries } from '@/lib/store';
 const COLUMNS = [
   ['createdAt', 'Received'],
   ['status', 'Status'],
+  ['spam', 'Possible spam'],
   ['type', 'Source'],
   ['name', 'Name'],
   ['phone', 'Phone'],
@@ -30,7 +31,7 @@ export async function GET(req) {
   const rows = await listEnquiries({ status: ENQUIRY_STATUSES.includes(status) ? status : undefined });
   const csv = [
     COLUMNS.map(([, h]) => cell(h)).join(','),
-    ...rows.map((e) => COLUMNS.map(([k]) => cell(k === 'type' ? TYPE_LABEL[e.type] : e[k])).join(',')),
+    ...rows.map((e) => COLUMNS.map(([k]) => cell(k === 'type' ? TYPE_LABEL[e.type] : k === 'spam' ? (e.spam ? 'Yes' : '') : e[k])).join(',')),
   ].join('\r\n');
   const date = new Date().toISOString().slice(0, 10);
   // BOM so Excel opens UTF-8 (₹, Tamil names) correctly.
