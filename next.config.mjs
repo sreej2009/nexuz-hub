@@ -13,6 +13,8 @@ const fullSite = {
     minimumCacheTTL: 60 * 60 * 24 * 30,
   },
   experimental: {
+    // Shared hosting (Hostinger) caps how many processes an app may start: build with one worker.
+    cpus: 1,
     serverActions: {
       // Admin product form uploads up to 6 photos × 5 MB.
       bodySizeLimit: '32mb',
