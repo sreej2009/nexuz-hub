@@ -2,13 +2,13 @@ import Link from 'next/link';
 import { PageTitle, StatusBadge, TYPE_LABEL, timeAgo } from '@/components/admin/ui';
 import Icon from '@/components/ui/Icon';
 import { requireAdmin } from '@/lib/auth';
-import { getStats, listEnquiries } from '@/lib/store';
+import { getStats, listEnquiries, storageInfo } from '@/lib/store';
 
 export const metadata = { title: 'Dashboard' };
 
 export default async function Dashboard() {
   await requireAdmin();
-  const [stats, latest] = await Promise.all([getStats(), listEnquiries()]);
+  const [stats, latest, storage] = await Promise.all([getStats(), listEnquiries(), storageInfo()]);
   const cards = [
     { label: 'New enquiries', value: stats.newEnquiries, href: '/admin/enquiries?status=new', accent: true },
     { label: 'Enquiries this week', value: stats.thisWeek, href: '/admin/enquiries' },
@@ -22,6 +22,25 @@ export default async function Dashboard() {
           <Icon name="plus" size={15} /> Add product
         </Link>
       </PageTitle>
+
+      {/* Where products and enquiries are being saved. */}
+      {storage.mode === 'mysql' && storage.ok && (
+        <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-1.5 text-sm text-emerald-900">
+          <span className="size-2 rounded-full bg-emerald-500" /> Saving to MySQL database — safe across updates
+        </p>
+      )}
+      {storage.mode === 'mysql' && !storage.ok && (
+        <p className="mb-6 rounded-xl border border-laser/40 bg-laser/10 px-4 py-3 text-sm" role="alert">
+          <strong>Can’t reach the database</strong> ({storage.error}). New enquiries can’t be saved until this is fixed — check DB_HOST, DB_NAME, DB_USER and
+          DB_PASSWORD in Hostinger.
+        </p>
+      )}
+      {storage.mode === 'file' && (
+        <p className="mb-6 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-950" role="alert">
+          <strong>Temporary storage.</strong> Products and enquiries are saved in the site folder and will be erased on the next deploy. Add the
+          database settings (DB_HOST, DB_NAME, DB_USER, DB_PASSWORD) in Hostinger to keep them safe.
+        </p>
+      )}
 
       <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">
         {cards.map((c) => (

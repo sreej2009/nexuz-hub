@@ -1,11 +1,8 @@
-// Product image uploads, stored next to the JSON data in <DATA_DIR>/uploads
-// and served by the /uploads/[name] route.
+// Product photo uploads. Stored through the active storage back-end
+// (MySQL BLOBs in production, ./data/uploads locally) and served by /uploads/[name].
 import { randomUUID } from 'node:crypto';
-import { mkdir, readFile, unlink, writeFile } from 'node:fs/promises';
-import path from 'node:path';
-import { DATA_DIR } from './store';
+import { backend } from './store';
 
-export const UPLOAD_DIR = path.join(DATA_DIR, 'uploads');
 export const MAX_UPLOAD_BYTES = 5 * 1024 * 1024;
 
 const TYPES = {
@@ -33,8 +30,7 @@ export async function saveUpload(file) {
   const type = sniff(buf);
   if (!type) throw new Error(`"${file.name}" is not a JPG, PNG, WebP or AVIF image.`);
   const name = `${randomUUID()}.${TYPES[type]}`;
-  await mkdir(UPLOAD_DIR, { recursive: true });
-  await writeFile(path.join(UPLOAD_DIR, name), buf);
+  await backend.files.put(name, type, buf);
   return `/uploads/${name}`;
 }
 
@@ -42,15 +38,11 @@ export const isUploadName = (name) => /^[0-9a-f-]{36}\.(jpg|png|webp|avif)$/.tes
 
 export async function readUpload(name) {
   if (!isUploadName(name)) return null;
-  try {
-    return await readFile(path.join(UPLOAD_DIR, name));
-  } catch {
-    return null;
-  }
+  return backend.files.get(name);
 }
 
 export async function removeUpload(url) {
   const name = url?.startsWith('/uploads/') ? url.slice('/uploads/'.length) : null;
   if (!name || !isUploadName(name)) return;
-  await unlink(path.join(UPLOAD_DIR, name)).catch(() => {});
+  await backend.files.remove(name).catch(() => {});
 }

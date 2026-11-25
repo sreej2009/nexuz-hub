@@ -21,16 +21,19 @@ For editing with live reload: `npm run dev`.
 - **Enquiries**: every form on the site lands here: contact/quote form, service pages, product pages, the "Request a callback" strip, and FAQ questions. You can filter by status or source, search, set a status (new → contacted → quoted → won / closed), add internal notes, call or WhatsApp the customer in one tap, and export everything to CSV for Excel or Google Sheets.
 - **Products**: add products with up to 6 photos, price, highlights and specifications. Each product gets its own page at `/products/<web-address>` and appears in the Products catalogue, on its range page, and (if marked Featured) on the home page. "Draft" hides a product without deleting it.
 
-## Where data is stored (for now)
+## Where data is stored
 
-Everything is saved locally in `data/` (created automatically on the first save):
+Products, enquiries and product photos are saved in **MySQL** when the database settings below are set. That's the setup in production on Hostinger. The tables (`nx_products`, `nx_enquiries`, `nx_uploads`) are created automatically on first use, and photos are stored in the database too. Nothing important lives in the app folder, so redeploys are safe.
 
-- `data/db.json`: products and enquiries
-- `data/uploads/`: product photos
+Without database settings (for example on your own computer), everything is saved in `data/` instead (`data/db.json` + `data/uploads/`). That folder is not in git. Don't rely on it on Hostinger, because Hostinger replaces the app folder on every deploy.
 
-Back this folder up. It is not in git. To store it somewhere else, set `DATA_DIR=/path/to/folder`.
+The admin dashboard shows which storage is in use:
 
-**Moving to a real database later:** all reads and writes go through `src/lib/store.js`. Re-implement the functions in that one file (same names and return shapes) for MySQL, PostgreSQL, MongoDB, Supabase or similar, and the rest of the site keeps working unchanged. Photos are handled in `src/lib/uploads.js` and can move to cloud storage the same way.
+- Green: saving to MySQL.
+- Amber: temporary local storage.
+- Red: database not reachable.
+
+All storage code is in `src/lib/store.js` and `src/lib/db/` (`mysql.js`, `file.js`).
 
 ## Settings (`.env.local`)
 
@@ -40,7 +43,8 @@ Back this folder up. It is not in git. To store it somewhere else, set `DATA_DIR
 | `ADMIN_SESSION_SECRET` | Random string used to sign the login cookie |
 | `COOKIE_SECURE` | Set `true` once the site is served over **https** |
 | `NEXT_PUBLIC_SITE_URL` | Public address, e.g. `https://your-domain.com` (used for SEO links and the sitemap) |
-| `DATA_DIR` | Optional folder for `db.json` and uploads |
+| `DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASSWORD` | MySQL database (Hostinger: host `localhost`). Optional `DB_PORT`, `DB_SOCKET`, `DB_POOL_SIZE` |
+| `DATA_DIR` | Folder for local storage when no database is set (default `./data`) |
 
 See `.env.example`.
 
@@ -53,7 +57,7 @@ npm ci && npm run build
 PORT=3000 npm start      # keep it running with pm2 or systemd
 ```
 
-Point nginx at port 3000. Run a single instance, because the local JSON storage expects one server process.
+Point nginx at port 3000. With MySQL configured you can run more than one instance; with local file storage, run a single instance.
 
 ## Where things are
 

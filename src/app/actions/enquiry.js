@@ -49,7 +49,17 @@ export async function submitEnquiry(_prev, formData) {
     return { ok: false, values: data, attempt: Date.now(), message: 'Too many requests from this device. Please try again in a few minutes or WhatsApp us.' };
   }
 
-  await addEnquiry(data);
+  try {
+    await addEnquiry(data);
+  } catch (err) {
+    console.error('[enquiry] could not save:', err.code || err.message);
+    return {
+      ok: false,
+      values: data,
+      attempt: Date.now(),
+      message: 'Sorry — we couldn’t send this right now. Please message us on WhatsApp or call +91 90036 24196.',
+    };
+  }
   revalidatePath('/admin', 'layout');
   return { ok: true };
 }

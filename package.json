@@ -10,6 +10,7 @@
   "dependencies": {
     "@tailwindcss/postcss": "4.1.17",
     "clsx": "2.1.1",
+    "mysql2": "3.24.6",
     "next": "16.4.6",
     "postcss": "8.5.33",
     "react": "19.3.1",

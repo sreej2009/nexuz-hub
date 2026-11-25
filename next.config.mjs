@@ -7,6 +7,8 @@ const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const fullSite = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // Database driver runs only on the server; load it from node_modules instead of bundling it.
+  serverExternalPackages: ['mysql2'],
   images: {
     formats: ['image/webp'],
     // Product photos never change at the same URL, so let browsers/CDNs keep them for a month.
@@ -36,6 +38,7 @@ const fullSite = {
 /** @type {import('next').NextConfig} */
 const staticPreview = {
   reactStrictMode: true,
+  serverExternalPackages: ['mysql2'],
   output: 'export',
   basePath: BASE_PATH,
   trailingSlash: true,
